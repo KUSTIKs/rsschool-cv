@@ -1,4 +1,4 @@
-# Artem Khvostyk
+# Artem Khvostyk :snowman:
 
 [Github][gh] | [Discord][ds] | [Telegram][tg]
 
@@ -66,6 +66,9 @@ def anagrams(word, words):
    - [Pyplane][yt-7]
    - [Django School][yt-8]
    - [Corey Schafer][yt-9]
+
+## English 
+I was studying English in my school and with extracurricular classes. I understand english speech pretty well, but my speaking is a little poor :joy:. Generally, according to test in internet, I have a `B1` Level.
 
 <!-- Social links -->
 
