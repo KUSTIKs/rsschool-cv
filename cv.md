@@ -1,5 +1,7 @@
 # Artem Khvostyk
 
+[Github](https://github.com/KUSTIKs) | [Discord](https://discord.com/users/522730231543627796) | [Telegram](https://t.me/Artem_Kustikovich)
+
 ## About me:
 
 I am **_creative_**, **_hardworking_** and **_reliable_** person. I joined this course to learn JavaScript and know more about CS in general.
