@@ -2,34 +2,34 @@
 
 [Github](https://github.com/KUSTIKs) | [Discord](https://discord.com/users/522730231543627796) | [Telegram](https://t.me/Artem_Kustikovich)
 
-## About me:
+## About me
 
 I am **_creative_**, **_hardworking_** and **_reliable_** person. I joined this course to learn JavaScript and know more about CS in general.
 
-## Technologies I use and learn:
+## Technologies I use and learn
 
-- JavaScript
-- HTML
+- **JavaScript**
+- **HTML**
   - BEM
-- CSS
+- **CSS**
   - SASS(SCSS)
-- Python
+- **Python**
   - Django
     - Jinja
-- GIT
+- **GIT**
   - Github
   - Conventional commits
-- SQL
+- **SQL**
   - PostgreSQL
   - SQLite
-- Other
+- **Other**
   - Gulp
   - Markdown
   - RegExp
 
-## My code examples:
+## My code examples
 
-**Moves in squared strings (II)**
+### Moves in squared strings (II)
 
 ```JavaScript
 function rot(strng) {
@@ -44,7 +44,7 @@ function oper(fct, s) {
 }
 ```
 
-**Where my anagrams at ?**
+### Where my anagrams at ?
 
 ```python
 def anagrams(word, words):
