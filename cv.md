@@ -1,4 +1,4 @@
-# Artem Khvostyk :snowman:
+# Artem Khvostyk
 
 [Github][gh] | [Discord][ds] | [Telegram][tg]
 
@@ -67,8 +67,9 @@ def anagrams(word, words):
    - [Django School][yt-8]
    - [Corey Schafer][yt-9]
 
-## English 
-I was studying English in my school and with extracurricular classes. I understand english speech pretty well, but my speaking is a little poor :joy:. Generally, according to test in internet, I have a `B1` Level.
+## English
+
+I was studying English in my school and with extracurricular classes. I understand english speech pretty well, but my speaking is a little poor. Generally, according to test in internet, I have a `B1` Level.
 
 <!-- Social links -->
 
@@ -79,8 +80,8 @@ I was studying English in my school and with extracurricular classes. I understa
 <!-- Other links -->
 
 [cs50]: https://cs50.harvard.edu/ "CS50"
-[cw ]: https://www.codewars.com/ "Codewars"
-[mdn ]: https://developer.mozilla.org/ "MDN"
+[cw]: https://www.codewars.com/ "Codewars"
+[mdn]: https://developer.mozilla.org/ "MDN"
 
 <!-- Youtube links -->
 
