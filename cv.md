@@ -1,6 +1,6 @@
 # Artem Khvostyk
 
-[Github](https://github.com/KUSTIKs) | [Discord](https://discord.com/users/522730231543627796) | [Telegram](https://t.me/Artem_Kustikovich)
+[Github][gh] | [Discord][ds] | [Telegram][tg]
 
 ## About me
 
@@ -53,16 +53,40 @@ def anagrams(word, words):
 
 ## Education
 
-1. [CS50](https://cs50.harvard.edu/)
-2. [Codewars](https://www.codewars.com/)
-3. [MDN](https://developer.mozilla.org/)
+1. [CS50][cs50]
+2. [Codewars][cw]
+3. [MDN][mdn]
 4. Youtube courses & videos
-   - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
-   - [Владилен Минин](https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw)
-   - [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
-   - [CodingLab](https://www.youtube.com/channel/UCBlr2jG1onljL-gUy9bbhJw)
-   - [Фрилансер по жизни](https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA)
-   - [Denis Ivy](https://www.youtube.com/channel/UCTZRcDjjkVajGL6wd76UnGg)
-   - [Pyplane](https://www.youtube.com/channel/UCQtHyVB4O4Nwy1ff5qQnyRw)
-   - [Django School](https://www.youtube.com/channel/UC_hPYclmFCIENpMUHpPY8FQ)
-   - [Corey Schafer](https://www.youtube.com/user/schafer5)
+   - [freeCodeCamp.org][yt-1]
+   - [Владилен Минин][yt-2]
+   - [Online Tutorials][yt-3]
+   - [CodingLab][yt-4]
+   - [Фрилансер по жизни][yt-5]
+   - [Denis Ivy][yt-6]
+   - [Pyplane][yt-7]
+   - [Django School][yt-8]
+   - [Corey Schafer][yt-9]
+
+<!-- Social links -->
+
+[gh]: https://github.com/KUSTIKs "KUSTIKs"
+[ds]: https://discord.com/users/522730231543627796 "ArtemK"
+[tg]: https://t.me/Artem_Kustikovich "@Artem_Kustikovich"
+
+<!-- Other links -->
+
+[cs50]: https://cs50.harvard.edu/ "CS50"
+[cw ]: https://www.codewars.com/ "Codewars"
+[mdn ]: https://developer.mozilla.org/ "MDN"
+
+<!-- Youtube links -->
+
+[yt-1]: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
+[yt-2]: https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw
+[yt-3]: https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
+[yt-4]: https://www.youtube.com/channel/UCBlr2jG1onljL-gUy9bbhJw
+[yt-5]: https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA
+[yt-6]: https://www.youtube.com/channel/UCTZRcDjjkVajGL6wd76UnGg
+[yt-7]: https://www.youtube.com/channel/UCQtHyVB4O4Nwy1ff5qQnyRw
+[yt-8]: https://www.youtube.com/channel/UC_hPYclmFCIENpMUHpPY8FQ
+[yt-9]: https://www.youtube.com/user/schafer5
