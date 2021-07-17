@@ -31,7 +31,7 @@ I am **_creative_**, **_hardworking_** and **_reliable_** person. I joined this 
 
 ### Moves in squared strings (II)
 
-```JavaScript
+```javascript
 function rot(strng) {
     return strng.split("\n").reverse().map(el => [...el].reverse().join("")).join("\n")
 }
