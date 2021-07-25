@@ -17,6 +17,7 @@ $-social-list: (
   color: clr.$primary-900;
   transition: background-color 200ms ease, color 200ms ease;
   &__icon {
+    line-height: 0;
     font-size: 37px;
   }
   @each $social, $clr in $-social-list {
