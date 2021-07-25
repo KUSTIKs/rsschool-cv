@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Poppins:wght@300;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- ICONS -->
@@ -23,63 +23,75 @@
   <body class="page">
     <div class="page__container">
       <header class="header">
-  <img src="./img/avatar.svg" alt="my avatar" />
+  <img class="header__image" src="./img/avatar.svg" alt="my avatar" />
   <div class="header__short-info">
-    <h1 class="text text_size_xl">Artem Khvostyk</h1>
-    <p class="text text_size_m text_secondary">
+    <h1 class="text text_size_xl header__name">Artem Khvostyk</h1>
+    <p class="text text_size_m text_color_secondary">
       I&nbsp;am creative, hardworking and reliable person.
     </p>
   </div>
 </header>
 
-      <hr />
+      <hr class="separator"/>
       <main class="main">
   <section class="section">
-    <h2 class="section__title">
+    <h2 class="section__title text text_size_l">
       Technologies, methodologies &amp;&nbsp;apps&nbsp;I use and Learn
     </h2>
     <div class="section__content"></div>
   </section>
   <section class="section">
-    <h2 class="section__title">
-      Code examples
+    <h2 class="section__title text text_size_l">
+      Code exam<span class="text_color_disabled text_caret_before">ples</span>
     </h2>
     <div class="section__content"></div>
   </section>
   <section class="section">
-    <h2 class="section__title">
+    <h2 class="section__title text text_size_l">
       Education
     </h2>
     <div class="section__content"></div>
   </section>
   <section class="section">
-    <h2 class="section__title">
+    <h2 class="section__title text text_size_l">
       English
     </h2>
     <div class="section__content"></div>
   </section>
 </main>
 
-      <hr />
+      <hr class="separator"/>
       <footer class="footer">
   <ul class="social-list">
     <li class="social-list__item">
-      <a aria-label="link to my discord" href="#" class="social-button">
-        <i class="bx bxl-discord-alt"></i>
+      <a
+        aria-label="link to my discord"
+        href="#"
+        class="social-button social-button_discord"
+      >
+        <i class="bx bxl-discord-alt social-button__icon"></i>
       </a>
     </li>
     <li class="social-list__item">
-      <a aria-label="link to my github" href="#" class="social-button">
-        <i class="bx bxl-github"></i>
+      <a
+        aria-label="link to my github"
+        href="#"
+        class="social-button social-button_github"
+      >
+        <i class="bx bxl-github social-button__icon"></i>
       </a>
     </li>
     <li class="social-list__item">
-      <a aria-label="link to my telegram" href="#" class="social-button">
-        <i class="bx bxl-telegram"></i>
+      <a
+        aria-label="link to my telegram"
+        href="#"
+        class="social-button social-button_telegram"
+      >
+        <i class="bx bxl-telegram social-button__icon"></i>
       </a>
     </li>
   </ul>
-  <small class="text text_size_xs">
+  <small class="text text_size_xs text_color_secondary">
     &copy;&nbsp;All rights reserved
   </small>
 </footer>

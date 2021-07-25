@@ -1,0 +1,28 @@
+@use "../abstracts/colors" as clr;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 30px;
+  background-color: clr.$background;
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    background-color: clr.$primary-900;
+    border-radius: 20px;
+    padding: 60px;
+  }
+}
+.separator {
+  height: 2px;
+  width: 100%;
+  margin: 30px 0;
+  border: none;
+  background-color: clr.$primary-600;
+}
