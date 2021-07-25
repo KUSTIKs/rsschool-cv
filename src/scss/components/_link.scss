@@ -1,0 +1,13 @@
+.link {
+  color: inherit;
+  &_type {
+    &_inline-text {
+      text-decoration: underline;
+      transition: filter 100ms ease;
+      &:hover,
+      &:active {
+        filter: brightness(0.6);
+      }
+    }
+  }
+}

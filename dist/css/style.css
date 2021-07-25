@@ -2,6 +2,7 @@
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: clamp(15px, 3vw, 16px);
+  line-height: 1.5em;
   font-weight: 400;
 }
 
@@ -533,6 +534,26 @@ template {
 .social-button_telegram:focus {
   background-color: #37b6e3;
   color: #ffffff;
+}
+
+.content-wrapper {
+  background-color: #404040;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.link {
+  color: inherit;
+}
+
+.link_type_inline-text {
+  text-decoration: underline;
+  transition: filter 100ms ease;
+}
+
+.link_type_inline-text:hover,
+.link_type_inline-text:active {
+  filter: brightness(0.6);
 }
 
 .section {
