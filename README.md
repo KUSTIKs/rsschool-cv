@@ -1,1 +1,2 @@
-https://github.com/KUSTIKs/rsschool-cv/cv
+
+<https://kustiks.github.io/rsschool-cv/>
