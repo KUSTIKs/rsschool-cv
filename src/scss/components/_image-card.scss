@@ -3,9 +3,20 @@
   border-radius: 10px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   &__image {
     height: 50%;
     width: 50%;
     object-fit: contain;
+    &_full-size {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &_size_xs {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
   }
 }

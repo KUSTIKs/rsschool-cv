@@ -500,6 +500,140 @@ template {
   gap: 20px;
 }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  column-gap: clamp(10px, 3vw, 20px);
+}
+
+.education-section__cards {
+  width: 100%;
+  row-gap: 10px;
+}
+
+.card-input {
+  display: none;
+}
+
+.education-section__card {
+  overflow: hidden;
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  transition: transform 200ms ease;
+}
+
+.education-section__card img {
+  position: absolute;
+}
+
+.tooltip {
+  grid-column: 1/-1;
+}
+
+.tooltip__tail {
+  height: 10px;
+  padding: 2.9289321881px;
+  text-align: center;
+  transition: transform 200ms ease;
+}
+
+.tooltip__tail::before {
+  content: "";
+  border-top-left-radius: 25%;
+  display: inline-block;
+  height: 14.1421356237px;
+  width: 14.1421356237px;
+  transform: rotate(45deg);
+  background-color: #404040;
+}
+
+.tooltip__content-list {
+  list-style: none;
+}
+
+.tooltip__content {
+  display: none;
+  overflow: hidden;
+}
+
+#cs50-card:checked ~ .card[for=cs50-card] {
+  transform: scale(1.05);
+}
+
+#cs50-card:checked ~ .tooltip .tooltip__tail {
+  transform: translateX(calc( (100% + clamp(10px, 3vw, 20px)) * 0 ));
+}
+
+#cs50-card:checked ~ .tooltip .tooltip__content[data-for=cs50-card] {
+  display: block;
+}
+
+#mdn-card:checked ~ .card[for=mdn-card] {
+  transform: scale(1.05);
+}
+
+#mdn-card:checked ~ .tooltip .tooltip__tail {
+  transform: translateX(calc( (100% + clamp(10px, 3vw, 20px)) * 1 ));
+}
+
+#mdn-card:checked ~ .tooltip .tooltip__content[data-for=mdn-card] {
+  display: block;
+}
+
+#codewars-card:checked ~ .card[for=codewars-card] {
+  transform: scale(1.05);
+}
+
+#codewars-card:checked ~ .tooltip .tooltip__tail {
+  transform: translateX(calc( (100% + clamp(10px, 3vw, 20px)) * 2 ));
+}
+
+#codewars-card:checked ~ .tooltip .tooltip__content[data-for=codewars-card] {
+  display: block;
+}
+
+#youtube-card:checked ~ .card[for=youtube-card] {
+  transform: scale(1.05);
+}
+
+#youtube-card:checked ~ .tooltip .tooltip__tail {
+  transform: translateX(calc( (100% + clamp(10px, 3vw, 20px)) * 3 ));
+}
+
+#youtube-card:checked ~ .tooltip .tooltip__content[data-for=youtube-card] {
+  display: block;
+}
+
+.yt-content__channels {
+  width: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  gap: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.yt-content__channel {
+  transition: transform 200ms ease;
+}
+
+.yt-content__channel:hover {
+  transform: scale(1.1);
+}
+
+.yt-content__channel_big {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
 .social-button {
   height: 50px;
   width: 50px;
@@ -558,7 +692,7 @@ template {
 
 .link_type_inline-text:hover,
 .link_type_inline-text:active {
-  filter: brightness(0.6);
+  filter: brightness(0.7);
 }
 
 .link_type_primary {
@@ -723,10 +857,23 @@ template {
   border-radius: 10px;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
 .image-card__image {
   height: 50%;
   width: 50%;
   object-fit: contain;
+}
+
+.image-card__image_full-size {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-card_size_xs {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
 }

@@ -1,0 +1,114 @@
+@use "sass:math";
+@use "sass:list";
+@use "abstracts/colors" as clr;
+
+// ids of cards in correct order
+$cards-id-input-list: cs50-card, mdn-card, codewars-card, youtube-card;
+$column-gap: clamp(10px, 3vw, 20px);
+$tail-height: 10px; // 0.5 of diag of square
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    list.length($cards-id-input-list),
+    minmax(50px, 1fr)
+  );
+  column-gap: #{$column-gap};
+}
+
+.education-section__cards {
+  width: 100%;
+  row-gap: 10px;
+}
+
+.card-input {
+  display: none;
+}
+.education-section {
+  &__card {
+    overflow: hidden;
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+    transition: transform 200ms ease;
+    img {
+      position: absolute;
+    }
+  }
+}
+.tooltip {
+  grid-column: 1/-1;
+  &__tail {
+    $raw-square-size: math.div($tail-height * 2, math.sqrt(2));
+    height: $tail-height;
+    padding: #{($tail-height * 2 - $raw-square-size) * 0.5};
+    text-align: center;
+    transition: transform 200ms ease;
+    &::before {
+      content: "";
+      border-top-left-radius: 25%;
+      display: inline-block;
+      height: $raw-square-size;
+      width: $raw-square-size;
+      transform: rotate(45deg);
+      background-color: clr.$primary-700;
+    }
+  }
+  &__content-list {
+    list-style: none;
+  }
+  &__content {
+    display: none;
+    overflow: hidden;
+  }
+}
+
+@each $id in $cards-id-input-list {
+  ##{$id}:checked {
+    & ~ .card[for="#{$id}"] {
+      transform: scale(1.05);
+    }
+    & ~ .tooltip {
+      .tooltip__tail {
+        transform: translateX(
+          calc(
+            (100% + #{$column-gap}) *
+              #{list.index($cards-id-input-list, $id) -
+              1}
+          )
+        );
+      }
+      .tooltip__content[data-for="#{$id}"] {
+        display: block;
+      }
+    }
+  }
+}
+
+.yt-content {
+  &__channels {
+    width: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    list-style: none;
+  }
+  &__channel {
+    transition: transform 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &_big {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  }
+}
