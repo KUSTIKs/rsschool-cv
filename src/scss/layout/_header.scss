@@ -7,11 +7,16 @@
   align-items: center;
   gap: 30px;
   &__image {
-    height: 130px;
-    width: 130px;
+    $avatar-size: clamp(100px, 15vw, 130px);
+    height: $avatar-size;
+    width: $avatar-size;
     object-fit: cover;
   }
   &__name {
     margin-bottom: 0.25em;
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
+    text-align: center;
   }
 }

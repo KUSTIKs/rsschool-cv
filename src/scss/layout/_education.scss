@@ -93,22 +93,16 @@ $tail-height: 10px; // 0.5 of diag of square
   &__channels {
     width: 100%;
     overflow: auto;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
+    display: flex;
     gap: 10px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding: 15px 10px 20px;
     list-style: none;
   }
   &__channel {
     transition: transform 200ms ease;
+    width: max-content;
     &:hover {
       transform: scale(1.1);
-    }
-    &_big {
-      grid-row: span 2;
-      grid-column: span 2;
     }
   }
 }

@@ -1,4 +1,6 @@
 @use "../abstracts/colors" as clr;
+@use "../abstracts/variables" as var;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +18,17 @@
     max-width: 900px;
     background-color: clr.$primary-900;
     border-radius: 20px;
-    padding: 60px;
+    padding: var.$page__container-padding;
+    padding-top: var.$page__container-padding-top;
+  }
+  @media (max-width: 650px) {
+    margin: 0;
+    padding: 0;
+    background-color: clr.$primary-900;
+    padding: 0;
+    &__container {
+      border-radius: 0;
+    }
   }
 }
 .separator {
