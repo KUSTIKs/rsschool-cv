@@ -1,0 +1,11 @@
+.image-card {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  &__image {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+}
