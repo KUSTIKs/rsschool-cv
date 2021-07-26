@@ -13,12 +13,16 @@
 .social-list {
   display: flex;
   list-style: none;
-  height: 50px;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__item {
+    width: max-content;
+  }
 }
 
 #rs-school-logo {
-  height: 100%;
+  height: 50px;
   &__letters,
   &__js {
     fill: clr.$social-primary;
