@@ -499,7 +499,32 @@ template {
 .social-list {
   display: flex;
   list-style: none;
+  height: 50px;
   gap: 20px;
+}
+
+#rs-school-logo {
+  height: 100%;
+}
+
+#rs-school-logo__letters,
+#rs-school-logo__js {
+  fill: #a6a6a6;
+}
+
+#rs-school-logo__oval {
+  fill: #333333;
+  stroke: #a6a6a6;
+}
+
+#rs-school-logo:hover #rs-school-logo__letters,
+#rs-school-logo:hover #rs-school-logo__js {
+  fill: #ffffff;
+}
+
+#rs-school-logo:hover #rs-school-logo__oval {
+  fill: #333333;
+  stroke: #ffffff;
 }
 
 .cards-grid {
@@ -873,6 +898,14 @@ template {
   border-radius: 8px;
 }
 
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 650px) {
   .page {
     margin: 0;
@@ -883,12 +916,6 @@ template {
 
   .page__container {
     border-radius: 0;
-  }
-
-  .footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
