@@ -1,0 +1,49 @@
+@use "sass:math";
+@use "sass:string";
+
+.rotated-grid {
+  $card-size: clamp(80px, 10vw, 100px);
+  $gap: clamp(10px, 8vw, 20px);
+  $cards-count: 54;
+  $cards-count-unique: 18;
+  $card-diag: math.sqrt(2) "*" $card-size;
+  $gap-diag: math.sqrt(2) "*" $gap;
+  $cell-size: math.sqrt(0.5) "*" $card-size;
+  width: calc(
+    #{math.div($cards-count-unique, 3)} * (#{$card-diag} + #{$gap-diag})
+  );
+  padding: calc((#{$card-diag} - #{$cell-size}) * 0.5);
+  // margin-left: calc(#{$gap-diag} * 0.5);
+  display: grid;
+  grid-template:
+    repeat(3, calc(#{$cell-size})) /
+    repeat(#{math.ceil(math.div($cards-count, 3))}, calc(#{$cell-size}));
+  gap: calc(#{$gap-diag} * 0.5)
+    calc(#{$gap-diag} + #{$card-diag} - #{$cell-size});
+  grid-auto-flow: column;
+  place-items: center;
+  margin-left: calc(#{$card-diag} * -0.5);
+  &__item {
+    transform: rotate(45deg);
+    height: $card-size;
+    width: $card-size;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 300ms ease;
+    //middle
+    &:nth-child(3n - 1) {
+      transform: translateX(calc((#{$card-diag} + #{$gap-diag}) * 0.5))
+        rotate(45deg);
+    }
+    &:hover {
+      transform: scale(1.2);
+      z-index: 10;
+      box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+      &:nth-child(3n - 1) {
+        transform: translateX(calc((#{$card-diag} + #{$gap-diag}) * 0.5))
+          scale(1.2);
+      }
+    }
+  }
+}

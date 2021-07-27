@@ -1,0 +1,63 @@
+<h2 class="section__title text text_size_l" id="code-examples-title">
+  Code exam<span class="text_color_disabled text_caret_before">ples</span>
+</h2>
+<ul aria-labelledby="code-examples-title" class="main__code-examples">
+  <li class="code-example">
+    <a
+      href="https://www.codewars.com/kata/5672682212c8ecf83e000050"
+      class="code-example__title text text_size_m text_color_secondary link link_type_primary"
+    >
+      Twice linear
+    </a>
+    <pre
+      class="code content-wrapper"
+    ><code class="code__content"><span class="code__keyword">function</span> <span class="code__function">dblLinear</span><span class="code__punctuation">(</span><span class="code__parameter">n</span><span class="code__punctuation">)</span> <span class="code__punctuation">{</span>
+  <span class="code__keyword">const</span> res <span class="code__operator">=</span> <span class="code__punctuation">[</span><span class="code__number">1</span><span class="code__punctuation">]</span><span class="code__punctuation">;</span>
+  <span class="code__keyword">let</span> x1 <span class="code__operator">=</span> <span class="code__number">0</span><span class="code__punctuation">,</span>
+      x2 <span class="code__operator">=</span> <span class="code__number">0</span><span class="code__punctuation">;</span>
+  <span class="code__keyword">while</span><span class="code__punctuation">(</span>res<span class="code__punctuation">.</span>length <span class="code__operator">&lt;=</span> n<span class="code__punctuation">)</span> <span class="code__punctuation">{</span>
+    y <span class="code__operator">=</span> <span class="code__number">2</span> <span class="code__operator">*</span> res<span class="code__punctuation">[</span>x1<span class="code__punctuation">]</span> <span class="code__operator">+</span> <span class="code__number">1</span><span class="code__punctuation">;</span>
+    z <span class="code__operator">=</span> <span class="code__number">3</span> <span class="code__operator">*</span> res<span class="code__punctuation">[</span>x2<span class="code__punctuation">]</span> <span class="code__operator">+</span> <span class="code__number">1</span><span class="code__punctuation">;</span>
+    <span class="code__keyword">if</span> <span class="code__punctuation">(</span>y <span class="code__operator">&lt;</span> z<span class="code__punctuation">)</span><span class="code__punctuation">{</span>
+      res<span class="code__punctuation">.</span><span class="code__function">push</span><span class="code__punctuation">(</span>y<span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+      x1<span class="code__operator">++</span><span class="code__punctuation">;</span>
+    <span class="code__punctuation">}</span> <span class="code__keyword">else</span> <span class="code__keyword">if</span> <span class="code__punctuation">(</span>y <span class="code__operator">&gt;</span> z<span class="code__punctuation">)</span> <span class="code__punctuation">{</span>
+      res<span class="code__punctuation">.</span><span class="code__function">push</span><span class="code__punctuation">(</span>z<span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+      x2<span class="code__operator">++</span><span class="code__punctuation">;</span>
+    <span class="code__punctuation">}</span> <span class="code__keyword">else</span> <span class="code__punctuation">{</span>
+      res<span class="code__punctuation">.</span><span class="code__function">push</span><span class="code__punctuation">(</span>y<span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+      x1<span class="code__operator">++</span><span class="code__punctuation">;</span>
+      x2<span class="code__operator">++</span><span class="code__punctuation">;</span>
+    <span class="code__punctuation">}</span>
+  <span class="code__punctuation">}</span>
+  <span class="code__keyword">return</span> res<span class="code__punctuation">[</span>n<span class="code__punctuation">]</span><span class="code__punctuation">;</span>
+<span class="code__punctuation">}</span></code></pre>
+  </li>
+  <li class="code-example">
+    <a
+      href="https://www.codewars.com/kata/5536a85b6ed4ee5a78000035"
+      class="code-example__title text text_size_m text_color_secondary link link_type_primary"
+    >
+      Help your granny!
+    </a>
+    <pre
+      class="code content-wrapper"
+    ><code class="code__content"><span class="code__keyword">def</span> <span class="code__function">tour</span><span class="code__punctuation">(</span>friends<span class="code__punctuation">,</span> friend_towns<span class="code__punctuation">,</span> home_to_town_distances<span class="code__punctuation">)</span><span class="code__punctuation">:</span>
+    
+  friend_towns <span class="code__operator">=</span> <span class="code__punctuation">[</span>a <span class="code__keyword">for</span> a <span class="code__keyword">in</span> friend_towns <span class="code__keyword">if</span> a<span class="code__punctuation">[</span><span class="code__number">0</span><span class="code__punctuation">]</span> <span class="code__keyword">in</span> friends<span class="code__punctuation">]</span>
+  friend_towns<span class="code__punctuation">.</span>sort<span class="code__punctuation">(</span>key <span class="code__operator">=</span> <span class="code__keyword">lambda</span> a<span class="code__punctuation">:</span> friends<span class="code__punctuation">.</span>index<span class="code__punctuation">(</span>a<span class="code__punctuation">[</span><span class="code__number">0</span><span class="code__punctuation">]</span><span class="code__punctuation">)</span><span class="code__punctuation">)</span>
+  
+  keys <span class="code__operator">=</span> <span class="code__punctuation">[</span>a<span class="code__punctuation">[</span><span class="code__number">1</span><span class="code__punctuation">]</span> <span class="code__keyword">for</span> a <span class="code__keyword">in</span> friend_towns<span class="code__punctuation">]</span>
+  res <span class="code__operator">=</span> home_to_town_distances<span class="code__punctuation">[</span>keys<span class="code__punctuation">[</span><span class="code__number">0</span><span class="code__punctuation">]</span><span class="code__punctuation">]</span>
+  prev_dis <span class="code__operator">=</span> res
+  
+  <span class="code__keyword">for</span> key <span class="code__keyword">in</span> keys<span class="code__punctuation">[</span><span class="code__number">1</span><span class="code__punctuation">:</span><span class="code__punctuation">]</span><span class="code__punctuation">:</span> 
+    dis <span class="code__operator">=</span> home_to_town_distances<span class="code__punctuation">[</span>key<span class="code__punctuation">]</span>
+    res <span class="code__operator">+=</span> <span class="code__punctuation">(</span>dis <span class="code__operator">**</span> <span class="code__number">2</span> <span class="code__operator">-</span> prev_dis <span class="code__operator">**</span> <span class="code__number">2</span><span class="code__punctuation">)</span> <span class="code__operator">**</span> <span class="code__number">0.5</span>
+    prev_dis <span class="code__operator">=</span> dis
+      
+  res <span class="code__operator">+=</span> home_to_town_distances<span class="code__punctuation">[</span>keys<span class="code__punctuation">[</span><span class="code__operator">-</span><span class="code__number">1</span><span class="code__punctuation">]</span><span class="code__punctuation">]</span>
+    
+<span class="code__keyword">return</span> <span class="code__builtin">int</span><span class="code__punctuation">(</span>res<span class="code__punctuation">)</span></code></pre>
+  </li>
+</ul>
