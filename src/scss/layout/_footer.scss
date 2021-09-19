@@ -1,16 +1,39 @@
+@use "../abstracts/colors"as clr;
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
-  @media (max-width: 650px) {
+
+  @media (max-width: 750px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
+
 .social-list {
   display: flex;
   list-style: none;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
+    width: max-content;
+  }
+}
+
+.rs-school-logo {
+  height: 50px;
+  
+  * {
+    fill: clr.$social-primary;
+    transition: fill 200ms ease;
+  }
+
+  &:hover * {
+    fill: clr.$white;
+  }
 }

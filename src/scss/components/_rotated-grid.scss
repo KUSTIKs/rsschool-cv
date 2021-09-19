@@ -5,7 +5,7 @@
   $card-size: clamp(80px, 10vw, 100px);
   $gap: clamp(10px, 8vw, 20px);
   $cards-count: 54;
-  $cards-count-unique: 18;
+  $cards-count-unique: 21;
   $card-diag: math.sqrt(2) "*" $card-size;
   $gap-diag: math.sqrt(2) "*" $gap;
   $cell-size: math.sqrt(0.5) "*" $card-size;

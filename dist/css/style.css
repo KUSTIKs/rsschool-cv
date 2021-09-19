@@ -435,6 +435,21 @@ template {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: #555555 #393939;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #393939;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #555555;
 }
 
 .page {
@@ -500,6 +515,25 @@ template {
   display: flex;
   list-style: none;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-list__item {
+  width: max-content;
+}
+
+.rs-school-logo {
+  height: 50px;
+}
+
+.rs-school-logo * {
+  fill: #a6a6a6;
+  transition: fill 200ms ease;
+}
+
+.rs-school-logo:hover * {
+  fill: #ffffff;
 }
 
 .cards-grid {
@@ -669,6 +703,7 @@ template {
 
 .content-wrapper {
   background-color: #404040;
+  list-style: none;
   padding: 20px;
   border-radius: 10px;
 }
@@ -796,7 +831,7 @@ template {
 }
 
 .rotated-grid {
-  width: calc( 6 * (1.4142135624 * clamp(80px, 10vw, 100px) + 1.4142135624 * clamp(10px, 8vw, 20px)) );
+  width: calc( 7 * (1.4142135624 * clamp(80px, 10vw, 100px) + 1.4142135624 * clamp(10px, 8vw, 20px)) );
   padding: calc((1.4142135624 * clamp(80px, 10vw, 100px) - 0.7071067812 * clamp(80px, 10vw, 100px)) * 0.5);
   display: grid;
   grid-template: repeat(3, calc(0.7071067812 * clamp(80px, 10vw, 100px)))/repeat(18, calc(0.7071067812 * clamp(80px, 10vw, 100px)));
@@ -873,6 +908,14 @@ template {
   border-radius: 8px;
 }
 
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 650px) {
   .page {
     margin: 0;
@@ -883,12 +926,6 @@ template {
 
   .page__container {
     border-radius: 0;
-  }
-
-  .footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
